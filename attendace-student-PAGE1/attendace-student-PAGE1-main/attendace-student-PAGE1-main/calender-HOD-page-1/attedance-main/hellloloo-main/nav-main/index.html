@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mali:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <div class="std-acamedic-ar">
+    <div class="statistical">STATISTICAL</div>
+    <div class="graphical">GRAPHICAL</div>
+    <header class="main">
+      <div class="main-child"></div>
+      <a class="pec-erp">PEC ERP</a>
+
+      <div class="modules">
+        <div class="aca-nav">
+          <div class="one">
+            <div>
+              <a href="#" class="profile">Attendance</a>
+            </div>
+            <div>
+              <a href="#" class="time-table">Virtual Attendance </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="image-1"></div>
+    <main class="selection">
+      <section class="year-selection">
+        <div class="year-input">
+          <div class="year-value">
+            <div class="year-display">
+              <div class="year-display-child"></div>
+              <div class="current-year">
+                <div class="rectangle-parent">
+                  <div class="frame-child"></div>
+                  <a class="dashboard">Dashboard</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="semester-selection">
+            <div class="fluentpeople-20-regular"></div>
+            <div class="dash">
+              <div class="academic-module"> <a href="#" class="profile">Academic Module</a></div>
+              <div class="attendance-module"> <a href="#" class="profile">Attendance Module</a></div>
+              <div class="assignment-module"> <a href="#" class="profile">Assignment Module</a></div>
+              <div class="document-module"> <a href="#" class="profile">Document Module</a></div>
+              <div class="examination-module"> <a href="#" class="profile">Examination Module</a></div>
+              <div class="communication-module"> <a href="#" class="profile">Communication Module</a></div>
+              <div class="report-module"> <a href="#" class="profile">Report Module</a></div>
+              <div class="research-module"> <a href="#" class="profile">Research Module</a></div>
+              <div class="survey-container">
+                <div class="survey-module"> <a href="#" class="profile">Survey Module</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="exam-selection">
+          <div class="exam-input">
+            <div class="calendar-container" id="calendar-container">
+
+              <h1 id="calendar-title">July 2024</h1>
+              <div id="month-year-selector">
+                <select id="month-dropdown" onchange="updateCalendar()">
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6" selected>July</option>
+                  <option value="7">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                </select>
+                <select id="year-dropdown" onchange="updateCalendar()">
+                  <option value="2023">2023</option>
+                  <option value="2024" selected>2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                </select>
+              </div>
+
+              <div class="legend">
+                <div class="present"><span></span>Present</div>
+                <div class="absent"><span></span>Absent</div>
+                <div class="on-duty"><span></span>On Duty</div>
+                <div class="external-on-duty"><span></span>External On Duty</div>
+                <div class="holiday"><span></span>Holiday</div>
+              </div>
+              <div class="weekdays">
+                <div>Monday</div>
+                <div>Tuesday</div>
+                <div>Wednesday</div>
+                <div>Thursday</div>
+                <div>Friday</div>
+                <div>Saturday</div>
+                <div>Sunday</div>
+              </div>
+              <div class="calendar">
+                <div class="day present">1</div>
+                <div class="day present">2</div>
+                <div class="day present">3</div>
+                <div class="day external-on-duty">4</div>
+                <div class="day absent">5</div>
+                <div class="day present">6</div>
+                <div class="day holiday">7</div>
+                <div class="day present">8</div>
+                <div class="day present">9</div>
+                <div class="day present">10</div>
+                <div class="day present">11</div>
+                <div class="day on-duty">12</div>
+                <div class="day present">13</div>
+                <div class="day holiday">14</div>
+                <div class="day present">15</div>
+                <div class="day present">16</div>
+                <div class="day on-duty">17</div>
+                <div class="day absent">18</div>
+                <div class="day present">19</div>
+                <div class="day present">20</div>
+                <div class="day holiday">21</div>
+                <div class="day present">22</div>
+                <div class="day absent">23</div>
+                <div class="day present">24</div>
+                <div class="day on-duty">25</div>
+                <div class="day present">26</div>
+                <div class="day present">27</div>
+                <div class="day holiday">28</div>
+                <div class="day present">29</div>
+                <div class="day present">30</div>
+                <div class="day present">31</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <i class="fas fa-calendar-alt calendar-icon" onclick="toggleCalendar()"></i>
+    <div class="calendar-overlay" id="calendar-overlay" onclick="toggleCalendar()"></div>
+  </div>
+
+  <script>
+    var examBoundary = document.getElementById("examBoundary");
+    if (examBoundary) {
+      examBoundary.addEventListener("click", function () {
+        var popup = document.getElementById("popup");
+        if (popup) {
+          if (popup.style.display === "none") {
+            popup.style.display = "block";
+          } else {
+            popup.style.display = "none";
+          }
+        }
+      });
+    }
+
+    function updateCalendar() {
+      const monthDropdown = document.getElementById("month-dropdown");
+      const yearDropdown = document.getElementById("year-dropdown");
+      const calendarTitle = document.getElementById("calendar-title");
+
+      const month = monthDropdown.options[monthDropdown.selectedIndex].text;
+      const year = yearDropdown.options[yearDropdown.selectedIndex].text;
+
+      calendarTitle.innerText = `${month} ${year}`;
+    }
+
+    function toggleCalendar() {
+      const calendarContainer = document.getElementById("calendar-container");
+      const calendarOverlay = document.getElementById("calendar-overlay");
+
+      if (calendarContainer.classList.contains("visible")) {
+        calendarContainer.classList.remove("visible");
+        calendarOverlay.classList.remove("visible");
+      } else {
+        calendarContainer.classList.add("visible");
+        calendarOverlay.classList.add("visible");
+      }
+    }
+  </script>
+</body>
+
+</html>
