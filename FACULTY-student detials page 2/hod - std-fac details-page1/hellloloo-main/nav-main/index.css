@@ -14,7 +14,7 @@ body{
 .statistical {
   width: 123px;
   position: absolute;
-  margin: 0 !important;
+  margin: 0;
   right: 180px;
   bottom: -6668px;
   line-height: 25px;
